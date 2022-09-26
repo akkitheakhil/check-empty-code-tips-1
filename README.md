@@ -9,7 +9,7 @@
 ## Description
 
 While using TypeScript or JavaScript,
-we often use the `bang` operator to check if a value is `empty` or `null` or `undefined`.
+we often use the `bang` operator to check if a value is `empty` , `null` or `undefined`.
 
 ```
 
@@ -19,7 +19,7 @@ if(!data) {
 
 ```
 
-This works sometimes, but it could introduce bugs you wouldn't want.
+This works sometimes, but it could also introduce bugs you wouldn't want to deal with. 
 If you are building large-scale applications, this is something I would do to check if any given value is empty:
 
 Create a `util` method which checks and handle different data types, to see if they are empty or not. 
@@ -48,7 +48,7 @@ Advantages of using this `util` method,
 
 - It can check any type of value like `number`, `string`, `array` or `object`.
 - It follows the `DRY` pattern,
-  where you can reuse this util method instead of writing the same conditions over and over again.
+  where you can simply reuse this util method instead of writing the same conditions over and over again.
 - Your code will be more readable using the util method.
 
 ## Bonus tips for Angular:
