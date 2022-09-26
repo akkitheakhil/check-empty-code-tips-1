@@ -33,8 +33,6 @@ formBang.addEventListener("submit", (e: SubmitEvent) => {
     if (softwareEngineerLevel >= 0 && softwareEngineerLevel <= 5) {
         const title = SOFTWARE_ENGINEER_LEVEL_MAP[softwareEngineerLevel];
         successBang.textContent = `Your title is ${title}`
-    } else {
-        errorBang.textContent = 'Please enter a valid value';
     }
 });
 
@@ -47,15 +45,13 @@ formUtil.addEventListener("submit", (e: SubmitEvent) => {
     const softwareEngineerLevel: number = inputUtil.valueAsNumber;
 
     if (isEmptyData(softwareEngineerLevel)) {
-        errorUtil.textContent = 'Please enter a value';
+        errorUtil.textContent = 'Please enter a value from 0 - 5';
         return;
     }
 
     if (softwareEngineerLevel >= 0 && softwareEngineerLevel <= 5) {
         const title = SOFTWARE_ENGINEER_LEVEL_MAP[softwareEngineerLevel];
         successUtil.textContent = `Your title is ${title}`
-    } else {
-        errorUtil.textContent = 'Please enter a valid value';
     }
 });
 
