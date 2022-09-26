@@ -22,7 +22,7 @@ if(!data) {
 This works sometimes, but it could also introduce bugs you wouldn't want to deal with. 
 You can check this example [here](https://akkitheakhil.github.io/check-empty-code-tips-1/).
 If you type `0` into the form using bang opeartor, you will see a bug. But, if you enter `0` on the form using the `util` function, you will get the desired output.
-This is because in javascript `0` represents false. 
+This is because in javascript `0` represents `false`. 
 
 If you are building large-scale applications, this is something I would do to check if any given value is empty:
 
