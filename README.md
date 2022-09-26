@@ -14,13 +14,15 @@ we often use the `bang` operator to check if a value is `empty` or `null` or `un
 ```
 
 if(!data) {
-  `{do this}`
+ // HANDLE CODE
 }
 
 ```
 
 This works sometimes, but it could introduce bugs you wouldn't want.
 If you are building large-scale applications, this is something I would do to check if any given value is empty:
+
+Create a `util` method which checks and handle different data types, to see if they are empty or not. 
 
 ```
 
@@ -111,3 +113,7 @@ To get a local copy up and running follow these simple example steps.
 
 Akhil Padmanabhan Nair - speaktoakhilp@gmail.com <br />
 Follow me on Linkedin for more tips: [Akhil Padmanabhan Nair](https://www.linkedin.com/in/akhilpadmanabhan/)
+
+  <hr>
+
+  <h3 align="center"> :computer: Happy Coding!!</h1>
