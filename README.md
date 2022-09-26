@@ -1,4 +1,4 @@
-p align="center">
+<p align="center">
 
   <h1 align="center">Check value empty - Code Tips #1</h1>
 
@@ -9,7 +9,7 @@ p align="center">
 ## Description
 
 While using TypeScript or JavaScript,
-we often use the `bang` operator to check if a value is 'empty' or 'null' or 'undefined'.
+we often use the `bang` operator to check if a value is `empty` or `null` or `undefined`.
 This works sometimes, but it could introduce bugs you wouldn't want.
 If you are building large-scale applications, this is something I would do to check if any given value is empty:
 
@@ -35,15 +35,15 @@ export const isEmptyData = (value: any): boolean => {
 
 Advantages of using this `util` method,
 
-- It can check any type of value like number, string, array or object.
-- It follows the DRY pattern,
+- It can check any type of value like `number`, `string`, `array` or `object`.
+- It follows the `DRY` pattern,
   where you can reuse this util method instead of writing the same conditions over and over again.
 - Your code will be more readable using the util method.
 
-Bonus tips for Angular:  
-You can use the same util function and wrap it inside a `pipe` and use that in a template.
+## Bonus tips for Angular:  
+You can use the same util function and wrap it inside a `pipe` and use that in the templates.
 
-`pipe`
+### Pipe
 
 ```
 
@@ -60,7 +60,7 @@ export class IsEmptyPipe implements PipeTransform {
 
 ```
 
-`Template`
+### Template
 
 ```
 
@@ -68,6 +68,8 @@ export class IsEmptyPipe implements PipeTransform {
 </div>
 
 ```
+
+## Setup and run demo locally
 
 ### Prerequisites
 
