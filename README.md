@@ -10,6 +10,15 @@
 
 While using TypeScript or JavaScript,
 we often use the `bang` operator to check if a value is `empty` or `null` or `undefined`.
+
+```
+
+if(!data) {
+  `{do this}`
+}
+
+```
+
 This works sometimes, but it could introduce bugs you wouldn't want.
 If you are building large-scale applications, this is something I would do to check if any given value is empty:
 
@@ -40,7 +49,8 @@ Advantages of using this `util` method,
   where you can reuse this util method instead of writing the same conditions over and over again.
 - Your code will be more readable using the util method.
 
-## Bonus tips for Angular:  
+## Bonus tips for Angular:
+
 You can use the same util function and wrap it inside a `pipe` and use that in the templates.
 
 ### Pipe
